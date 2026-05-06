@@ -1,0 +1,91 @@
+name: Verification Report
+description: Submit a verification report for a completed task.
+title: "[VERIFY]: "
+labels: ["verification"]
+body:
+  - type: input
+    id: task_id
+    attributes:
+      label: Task ID
+      placeholder: "TASK-XXXX"
+    validations:
+      required: true
+  - type: input
+    id: verifier_worker
+    attributes:
+      label: Verifier Worker
+      description: "Which worker is performing this verification?"
+    validations:
+      required: true
+  - type: dropdown
+    id: verifier_role
+    attributes:
+      label: Verifier Role
+      options:
+        - qa-verifier
+        - release-reviewer
+        - coordinator
+        - human
+    validations:
+      required: true
+  - type: dropdown
+    id: reviewer_type
+    attributes:
+      label: Reviewer Type
+      options:
+        - self-check
+        - independent-worker
+        - human
+    validations:
+      required: true
+  - type: dropdown
+    id: different_from_implementer
+    attributes:
+      label: Was Verifier Different from Implementer?
+      description: "Independent verification requires a different worker or human."
+      options:
+        - "yes — different worker"
+        - "yes — human review"
+        - "no — solo mode with automated validation"
+    validations:
+      required: true
+  - type: textarea
+    id: criteria_check
+    attributes:
+      label: Acceptance Criteria Check
+      description: "List each criterion and whether it passed"
+    validations:
+      required: true
+  - type: textarea
+    id: test_results
+    attributes:
+      label: Test Results
+  - type: textarea
+    id: evidence_reviewed
+    attributes:
+      label: Evidence Reviewed
+      description: "What evidence was reviewed? (test output, screenshots, logs, handoffs)"
+  - type: textarea
+    id: issues_found
+    attributes:
+      label: Issues Found
+  - type: dropdown
+    id: approval_status
+    attributes:
+      label: Approval Status
+      options:
+        - approved
+        - needs-changes
+        - blocked
+    validations:
+      required: true
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Verdict
+      options:
+        - approved
+        - needs-changes
+        - blocked
+    validations:
+      required: true

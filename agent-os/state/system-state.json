@@ -1,0 +1,14 @@
+{
+  "repo_name": "[PROJECT_NAME]",
+  "template_name": "ROWS — Repo-Orchestrated Worker System",
+  "mode": "template",
+  "current_phase": "initialization",
+  "execution_mode": "solo",
+  "assignment_model": "capability → role → preferred worker → active worker",
+  "active_goal_file": "PROJECT_GOAL.md",
+  "assignment_state_file": "agent-os/state/assignment-state.json",
+  "capability_registry_file": "agent-os/state/capability-registry.json",
+  "active_task_count": 1,
+  "last_updated": "2026-05-06T13:50:00-04:00",
+  "notes": "Template initialized with flexible worker assignment system. Complete PROJECT_GOAL.md to begin."
+}

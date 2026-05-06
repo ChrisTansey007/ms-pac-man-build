@@ -1,0 +1,27 @@
+name: Template Readiness Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate template readiness
+        run: npm run validate:template
+      - name: Validate JSON
+        run: npm run validate:json
+      - name: Validate links
+        run: npm run validate:links
+      - name: Validate placeholders
+        run: npm run validate:placeholders
+      - name: Run full audit
+        run: npm run audit

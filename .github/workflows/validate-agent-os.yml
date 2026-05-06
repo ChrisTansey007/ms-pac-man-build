@@ -1,0 +1,47 @@
+name: Validate Agent OS
+
+on:
+  push:
+    paths:
+      - 'agent-os/**'
+      - 'scripts/**'
+      - 'prompt-library/**'
+      - 'examples/**'
+      - 'docs/**'
+  pull_request:
+    paths:
+      - 'agent-os/**'
+      - 'scripts/**'
+      - 'prompt-library/**'
+      - 'examples/**'
+      - 'docs/**'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate JSON
+        run: npm run validate:json
+      - name: Validate tasks
+        run: npm run validate:tasks
+      - name: Validate handoffs
+        run: npm run validate:handoffs
+      - name: Validate assignments
+        run: npm run validate:assignments
+      - name: Validate decisions
+        run: npm run validate:decisions
+      - name: Validate links
+        run: npm run validate:links
+      - name: Validate placeholders
+        run: npm run validate:placeholders
+      - name: Validate locks
+        run: npm run validate:locks
+      - name: Validate template readiness
+        run: npm run validate:template
+      - name: Check definition of done
+        run: npm run check:dod

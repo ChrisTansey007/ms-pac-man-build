@@ -1,0 +1,28 @@
+{
+  "name": "rows-template",
+  "version": "0.3.0",
+  "description": "ROWS — Repo-Orchestrated Worker System template",
+  "type": "module",
+  "scripts": {
+    "validate:json": "node scripts/validate-json.mjs",
+    "validate:tasks": "node scripts/validate-task.mjs",
+    "validate:handoffs": "node scripts/validate-handoff.mjs",
+    "validate:assignments": "node scripts/validate-assignments.mjs",
+    "validate:decisions": "node scripts/validate-decisions.mjs",
+    "validate:links": "node scripts/validate-links.mjs",
+    "validate:placeholders": "node scripts/validate-placeholders.mjs",
+    "validate:locks": "node scripts/validate-locks.mjs",
+    "validate:template": "node scripts/validate-template-readiness.mjs",
+    "validate:agent-os": "node scripts/validate-json.mjs && node scripts/validate-task.mjs && node scripts/validate-handoff.mjs && node scripts/validate-assignments.mjs && node scripts/validate-decisions.mjs && node scripts/validate-links.mjs && node scripts/validate-placeholders.mjs && node scripts/validate-locks.mjs && node scripts/validate-template-readiness.mjs",
+    "status:generate": "node scripts/generate-status-report.mjs",
+    "assignments:report": "node scripts/generate-assignment-report.mjs",
+    "check:dod": "node scripts/check-definition-of-done.mjs",
+    "list:tasks": "node scripts/list-tasks.mjs",
+    "list:workers": "node scripts/list-workers.mjs",
+    "list:capabilities": "node scripts/list-capabilities.mjs",
+    "list:modes": "node scripts/list-modes.mjs",
+    "audit": "node scripts/audit-agent-os.mjs"
+  },
+  "keywords": ["rows", "agent-os", "multi-agent", "template"],
+  "license": "MIT"
+}

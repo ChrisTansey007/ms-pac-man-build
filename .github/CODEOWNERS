@@ -1,0 +1,13 @@
+# CODEOWNERS — Repository Ownership
+
+# Global owner — replace @OWNER_USERNAME with your GitHub username after forking.
+* @OWNER_USERNAME
+
+# Agent-OS files are critical infrastructure. Changes require owner review.
+/agent-os/ @OWNER_USERNAME
+
+# Documentation
+/docs/ @OWNER_USERNAME
+
+# GitHub workflows
+/.github/workflows/ @OWNER_USERNAME

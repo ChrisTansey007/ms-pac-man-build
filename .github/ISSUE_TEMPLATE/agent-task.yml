@@ -1,0 +1,116 @@
+name: Agent Task
+description: Create a new task for an AI worker to execute.
+title: "[TASK]: "
+labels: ["task", "agent-os"]
+body:
+  - type: input
+    id: task_id
+    attributes:
+      label: Task ID
+      description: "Unique task identifier (e.g., TASK-0002)"
+      placeholder: "TASK-XXXX"
+    validations:
+      required: true
+  - type: dropdown
+    id: execution_mode
+    attributes:
+      label: Execution Mode Compatibility
+      description: "Which execution modes does this task support?"
+      multiple: true
+      options:
+        - solo
+        - multi-worker
+        - hybrid
+    validations:
+      required: true
+  - type: dropdown
+    id: responsible_role
+    attributes:
+      label: Responsible Role
+      description: "Which role owns this task?"
+      options:
+        - goal-builder
+        - project-planner
+        - architect
+        - researcher
+        - backend-builder
+        - frontend-builder
+        - qa-verifier
+        - documentation-maintainer
+        - release-reviewer
+        - coordinator
+    validations:
+      required: true
+  - type: textarea
+    id: required_capabilities
+    attributes:
+      label: Required Capabilities
+      description: "What capabilities does a worker need? (e.g., code-implementation, test-writing)"
+    validations:
+      required: true
+  - type: dropdown
+    id: worker_type
+    attributes:
+      label: Preferred Worker
+      description: "Recommended worker (guidance, not hard requirement)"
+      options:
+        - codex
+        - claude
+        - gemini
+        - windsurf
+        - antigravity
+        - hermes
+        - any
+    validations:
+      required: true
+  - type: dropdown
+    id: reassignment_allowed
+    attributes:
+      label: Reassignment Allowed
+      options:
+        - "yes"
+        - "no"
+    validations:
+      required: true
+  - type: dropdown
+    id: human_review_required
+    attributes:
+      label: Human Review Required
+      description: "Must a human approve this task before it is marked done?"
+      options:
+        - "yes"
+        - "no"
+        - "only for security-critical changes"
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: "What must be accomplished?"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: "How will we know this is done?"
+    validations:
+      required: true
+  - type: textarea
+    id: files_affected
+    attributes:
+      label: Files Likely Affected
+      description: "Which files or directories will likely change?"
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: "Other tasks this depends on"
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks
+      description: "Known risks or concerns"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes

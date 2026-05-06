@@ -1,0 +1,39 @@
+name: Research Task
+description: Request research on a technology, pattern, or approach.
+title: "[RESEARCH]: "
+labels: ["research"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research Question
+      description: "What do we need to learn?"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: "Why is this research needed? What decision depends on it?"
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: "Budget, compatibility, performance requirements"
+  - type: dropdown
+    id: preferred_worker
+    attributes:
+      label: Preferred Worker
+      options:
+        - gemini
+        - claude
+        - any
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Expected Deliverables
+      description: "What should the research produce? (report, comparison table, recommendation)"
+    validations:
+      required: true

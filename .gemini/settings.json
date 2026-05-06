@@ -1,0 +1,14 @@
+{
+  "context_files": [
+    "AGENTS.md",
+    "GEMINI.md",
+    "PROJECT_GOAL.md",
+    "agent-os/README.md",
+    "agent-os/worker-contract.md",
+    "agent-os/workers/gemini-worker.md"
+  ],
+  "rules_directory": ".gemini/",
+  "project_context": "See PROJECT_GOAL.md for project definition.",
+  "worker_role": "gemini",
+  "notes": "Gemini is a worker, not the orchestrator. The repo is the source of truth."
+}

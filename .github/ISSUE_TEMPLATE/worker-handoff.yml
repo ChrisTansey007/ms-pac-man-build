@@ -1,0 +1,107 @@
+name: Worker Handoff
+description: Submit a handoff from a worker session.
+title: "[HANDOFF]: "
+labels: ["handoff"]
+body:
+  - type: input
+    id: task_id
+    attributes:
+      label: Task ID
+      placeholder: "TASK-XXXX"
+    validations:
+      required: true
+  - type: dropdown
+    id: worker
+    attributes:
+      label: Worker
+      options:
+        - codex
+        - claude
+        - gemini
+        - windsurf
+        - antigravity
+        - hermes
+    validations:
+      required: true
+  - type: dropdown
+    id: role_performed
+    attributes:
+      label: Role Performed
+      options:
+        - goal-builder
+        - project-planner
+        - architect
+        - researcher
+        - backend-builder
+        - frontend-builder
+        - qa-verifier
+        - documentation-maintainer
+        - release-reviewer
+        - coordinator
+    validations:
+      required: true
+  - type: textarea
+    id: capabilities_used
+    attributes:
+      label: Capabilities Used
+      description: "Which capabilities were exercised in this session?"
+  - type: input
+    id: date
+    attributes:
+      label: Date/Time
+      placeholder: "YYYY-MM-DD HH:MM"
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Task Status
+      options:
+        - in-progress
+        - review
+        - blocked
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary of Work
+    validations:
+      required: true
+  - type: textarea
+    id: files_changed
+    attributes:
+      label: Files Changed
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence Produced
+  - type: textarea
+    id: known_issues
+    attributes:
+      label: Known Issues
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks
+  - type: input
+    id: previous_worker
+    attributes:
+      label: Previous Worker
+      description: "If this is a reassignment, who worked on this task before?"
+  - type: input
+    id: next_recommended_worker
+    attributes:
+      label: Next Recommended Worker
+      description: "Which worker should pick up this task next?"
+  - type: textarea
+    id: reassignment_notes
+    attributes:
+      label: Reassignment Notes
+      description: "If this handoff is part of a reassignment, provide context for the new worker."
+  - type: textarea
+    id: next_steps
+    attributes:
+      label: Next Steps
+    validations:
+      required: true

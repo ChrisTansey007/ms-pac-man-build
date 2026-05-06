@@ -1,0 +1,21 @@
+name: Stale Task Audit
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Daily at 6 AM UTC
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: List tasks
+        run: npm run list:tasks
+      - name: Validate locks
+        run: npm run validate:locks
+      - name: Generate status report
+        run: npm run status:generate

@@ -1,0 +1,18 @@
+{
+  "mode": "solo",
+  "active_goal_builder": null,
+  "active_coordinator": null,
+  "active_workers": [],
+  "assignments": [],
+  "reassignment_policy": {
+    "allow_reassignment": true,
+    "require_handoff_before_reassignment": true,
+    "allow_human_override": true,
+    "allow_stale_lock_recovery": true,
+    "require_new_lock_after_reassignment": true
+  },
+  "notes": [
+    "Mode may be solo, multi-worker, or hybrid.",
+    "Assignments should route by capability and role before worker."
+  ]
+}
