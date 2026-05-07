@@ -27,6 +27,7 @@
 4. [`agent-os/state/system-state.json`](../state/system-state.json)
 5. [`CLAUDE.md`](../../CLAUDE.md)
 6. [`.claude/rules/`](../../.claude/rules/) (domain-specific rules)
+7. [`agent-os/tool-boundaries.md`](../tool-boundaries.md) — canonical tool-use boundary policy
 
 ## Required Output
 

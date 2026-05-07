@@ -28,6 +28,7 @@
 6. [`.antigravity/artifact-requirements.md`](../../.antigravity/artifact-requirements.md)
 7. [`.antigravity/safe-terminal-policy.md`](../../.antigravity/safe-terminal-policy.md)
 8. [`.antigravity/review-policy.md`](../../.antigravity/review-policy.md)
+9. [`agent-os/tool-boundaries.md`](../tool-boundaries.md) — canonical tool-use boundary policy
 
 ## Required Output
 
@@ -79,10 +80,11 @@
 
 ## Safety Notes
 
-- Follow `.antigravity/safe-terminal-policy.md` strictly.
+- Follow [`agent-os/tool-boundaries.md`](../tool-boundaries.md) as the canonical policy.
+- `.antigravity/safe-terminal-policy.md` is a compatibility shim only.
 - Never run destructive commands without human approval.
 - Never modify files outside the workspace boundary.
-- Review all terminal commands against the safe terminal policy.
+- Review all terminal commands against the canonical policy before executing them.
 
 ## Handoff Requirements
 

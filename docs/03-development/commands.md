@@ -7,6 +7,7 @@
 | Command | Description |
 |---------|-------------|
 | `npm run dev` | Start development server |
+| `npm run init` | Initialize a fresh fork and replace starter placeholders |
 | `npm run build` | Build for production |
 | `npm start` | Start production server |
 

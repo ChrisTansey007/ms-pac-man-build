@@ -26,6 +26,7 @@
 4. [`agent-os/state/system-state.json`](../state/system-state.json)
 5. [`GEMINI.md`](../../GEMINI.md)
 6. [`.gemini/settings.json`](../../.gemini/settings.json)
+7. [`agent-os/tool-boundaries.md`](../tool-boundaries.md) — canonical tool-use boundary policy
 
 ## Required Output
 

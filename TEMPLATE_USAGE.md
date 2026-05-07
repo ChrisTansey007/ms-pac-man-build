@@ -29,13 +29,17 @@ git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
 ```
 
-### Step 3: Fill in PROJECT_GOAL.md
+### Step 3: Run the initializer
+
+Run `npm run init` after cloning to stamp the fork metadata, owner username, and starter state files.
+
+### Step 4: Fill in PROJECT_GOAL.md
 
 Open [`PROJECT_GOAL.md`](./PROJECT_GOAL.md) and complete every section. This is the single most important file. Workers use it to understand what you are building and to decompose the goal into tasks.
 
 **Do not skip this step.** An incomplete `PROJECT_GOAL.md` will cause workers to make incorrect assumptions.
 
-### Step 4: Create the First Project Brief
+### Step 5: Create the First Project Brief
 
 Optionally, populate the files in `docs/00-project-brief/`:
 - [`vision.md`](./docs/00-project-brief/vision.md) — Expand on the vision.
@@ -43,7 +47,7 @@ Optionally, populate the files in `docs/00-project-brief/`:
 - [`non-goals.md`](./docs/00-project-brief/non-goals.md) — Define what is explicitly out.
 - [`glossary.md`](./docs/00-project-brief/glossary.md) — Define project-specific terminology.
 
-### Step 5: Ask a Worker to Decompose the Goal
+### Step 6: Ask a Worker to Decompose the Goal
 
 Use the prompt from `prompt-library/goal-intake-to-tasks.md` with any supported worker (Hermes is recommended for initial decomposition). Copy and paste the prompt into the worker's chat.
 
@@ -53,7 +57,7 @@ The worker will:
 3. Create task files in `agent-os/tasks/backlog/`.
 4. Write a handoff summarizing the decomposition.
 
-### Step 6: Review Generated Tasks
+### Step 7: Review Generated Tasks
 
 Review each task file in `agent-os/tasks/backlog/`. Verify:
 - The objective is clear and scoped.
@@ -63,7 +67,7 @@ Review each task file in `agent-os/tasks/backlog/`. Verify:
 
 Edit tasks as needed. Delete tasks that are out of scope.
 
-### Step 7: Move Approved Tasks into Ready
+### Step 8: Move Approved Tasks into Ready
 
 Move task files you approve from `agent-os/tasks/backlog/` to `agent-os/tasks/ready/`. You can do this manually or use:
 
@@ -73,7 +77,7 @@ node scripts/move-task.mjs --from backlog --to ready --task TASK-0001
 
 Only tasks in `ready/` can be claimed by workers.
 
-### Step 8: Let Workers Claim Tasks
+### Step 9: Let Workers Claim Tasks
 
 Workers will:
 1. Read `AGENTS.md` and `agent-os/worker-contract.md`.
@@ -84,7 +88,7 @@ Workers will:
 6. Create a branch following the branch strategy.
 7. Move the task to `in-progress/` and begin work.
 
-### Step 9: Review Handoffs and Verification Evidence
+### Step 10: Review Handoffs and Verification Evidence
 
 After a worker completes a session:
 1. Read the handoff file in `agent-os/handoffs/active/`.
@@ -93,7 +97,7 @@ After a worker completes a session:
 4. If satisfied, move the task to `review/`.
 5. Assign a different worker or review it yourself.
 
-### Step 10: Merge Verified Work
+### Step 11: Merge Verified Work
 
 Once a task passes review:
 1. Merge the worker's branch.

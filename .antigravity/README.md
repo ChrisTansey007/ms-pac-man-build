@@ -1,31 +1,17 @@
-# .antigravity — Antigravity Adapter Directory
+# Antigravity Adapter
 
-This directory contains Antigravity-specific policies for the ROWS system.
+> **Adapter files for the Antigravity worker.**
 
-## Purpose
+This directory exists as a worker-specific adapter layer. The canonical tool and safety policy lives in [`agent-os/tool-boundaries.md`](../agent-os/tool-boundaries.md).
 
-Antigravity is a worker optimized for agentic execution, UI/browser verification, and artifact production. The files in this directory define Antigravity's operational policies.
+## Read First
 
-## Directory Structure
-
-```
-.antigravity/
-├── README.md                  ← This file
-├── artifact-requirements.md   ← Required artifacts for task completion
-├── review-policy.md           ← Human and artifact review policies
-└── safe-terminal-policy.md    ← Safety rules for terminal operations
-```
-
-## Startup Sequence
-
-Before any action, Antigravity must read:
 1. [`AGENTS.md`](../AGENTS.md)
 2. [`PROJECT_GOAL.md`](../PROJECT_GOAL.md)
 3. [`agent-os/worker-contract.md`](../agent-os/worker-contract.md)
-4. [`agent-os/workers/antigravity-worker.md`](../agent-os/workers/antigravity-worker.md)
-5. [`agent-os/state/system-state.json`](../agent-os/state/system-state.json)
-6. `.antigravity/safe-terminal-policy.md` — Safety rules for this worker.
+4. [`agent-os/tool-boundaries.md`](../agent-os/tool-boundaries.md)
+5. [`agent-os/prompt-injection-policy.md`](../agent-os/prompt-injection-policy.md)
 
-## Related Files
+## Purpose
 
-- [`agent-os/workers/antigravity-worker.md`](../agent-os/workers/antigravity-worker.md) — Worker role definition
+Antigravity is the verification-oriented worker: screenshots, recordings, browser checks, and other evidence capture. The files in this directory should stay thin and defer to the canonical policy whenever possible.

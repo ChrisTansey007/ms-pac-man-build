@@ -1,43 +1,23 @@
-# Review Policy
+# Antigravity Review Policy
 
-> **Antigravity's review policy for human review and artifact review.**
+> **How Antigravity should review evidence and close the loop.**
 
-## Human Review Requirements
+## Review Rules
 
-The following actions require explicit human approval before execution:
+- Review against the task acceptance criteria, not against vague preferences.
+- Compare the produced evidence with the claimed result.
+- Require independent proof for any PASS verdict.
+- Call out missing evidence explicitly.
+- If the task is still incomplete, say so and preserve the handoff trail.
 
-- Deleting files or directories outside the task's defined scope.
-- Modifying git history (rebase, force push, reset).
-- Installing production dependencies.
-- Editing environment files (`.env`, `.env.local`, secrets).
-- Running deployment commands.
-- Modifying files outside the workspace boundary.
-- Changing authentication or authorization logic.
-- Modifying database schemas in production.
+## Escalation Rules
 
-## Artifact Review Requirements
+- Escalate if the evidence is incomplete, contradictory, or missing.
+- Escalate if the task would require policy changes or secret disclosure.
+- Escalate if the task depends on another worker’s unfinished work.
 
-Before considering a task complete, Antigravity must:
+## Canonical References
 
-1. **Self-review all artifacts** for completeness and accuracy.
-2. **Run all automated checks** (tests, linters, validators).
-3. **Verify acceptance criteria** independently — do not assume they are met.
-4. **Check for regressions** — run the full test suite, not just new tests.
-
-## Independent Review
-
-After self-review, the task must be reviewed by:
-- A different worker (not Antigravity), OR
-- A human.
-
-Antigravity cannot close its own tasks. See [`agent-os/verification-gates.md`](../agent-os/verification-gates.md).
-
-## Review Checklist
-
-- [ ] All artifacts produced and complete
-- [ ] Automated checks pass
-- [ ] Acceptance criteria independently verified
-- [ ] No regressions detected
-- [ ] Handoff written and complete
-- [ ] Task moved to `review/` (not `done/`)
-- [ ] Template neutrality preserved (no app-specific code, no Copilot files, no vague placeholders)
+- [`../agent-os/tool-boundaries.md`](../agent-os/tool-boundaries.md)
+- [`../agent-os/worker-contract.md`](../agent-os/worker-contract.md)
+- [`../agent-os/definition-of-done.md`](../agent-os/definition-of-done.md)

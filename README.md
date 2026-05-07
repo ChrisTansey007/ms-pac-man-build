@@ -33,19 +33,22 @@ Click **Use this template** → **Create a new repository** on GitHub.
 ### 2. Rename your fork
 Name it after your project (e.g., `my-saas-app`, `internal-tools-monorepo`).
 
-### 3. Fill in PROJECT_GOAL.md
+### 3. Run the initializer
+Run `npm run init` after cloning to stamp the fork metadata, owner username, and starter state files.
+
+### 4. Fill in PROJECT_GOAL.md
 Open [`PROJECT_GOAL.md`](./PROJECT_GOAL.md) and complete the guided intake form. This is the single most important file for bootstrapping your project.
 
-### 4. Invite a worker
+### 5. Invite a worker
 Ask any supported AI worker to read `AGENTS.md` and `PROJECT_GOAL.md`, then decompose the goal into task files.
 
-### 5. Review and approve tasks
+### 6. Review and approve tasks
 Move approved tasks from `agent-os/tasks/backlog/` into `agent-os/tasks/ready/`.
 
-### 6. Let workers claim and execute
+### 7. Let workers claim and execute
 Workers claim tasks, create locks, implement changes, produce evidence, and write handoffs.
 
-### 7. Verify and merge
+### 8. Verify and merge
 Review handoffs and verification evidence. Merge verified work.
 
 ---

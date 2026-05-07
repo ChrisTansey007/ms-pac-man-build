@@ -22,6 +22,7 @@ This directory contains sample artifacts showing the expected quality and format
 | `sample-handoff.md` | A high-quality worker handoff |
 | `sample-verification-report.md` | Verification evidence and pass/fail assessment |
 | `sample-reassignment-record.md` | A worker switch from one worker to another |
+| `sample-multi-worker-walkthrough.md` | A fictional coordinated handoff across multiple workers |
 | `sample-status-report.md` | A useful project status summary |
 
 ## The Fictional Example Project

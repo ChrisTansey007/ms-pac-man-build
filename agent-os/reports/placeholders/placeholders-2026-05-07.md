@@ -1,8 +1,8 @@
 # Placeholder Audit Report — 2026-05-07
-> Generated: 2026-05-07T02:28:19.725Z
+> Generated: 2026-05-07T02:53:32.898Z
 
 ## Summary
-- Intentional placeholders found: 75
+- Intentional placeholders found: 80
 - Vague placeholders found: 0
 
 ## No vague placeholders found.
@@ -28,4 +28,4 @@
 - `PROJECT_GOAL.md`: [NON_GOAL_2]
 - `PROJECT_GOAL.md`: [NON_GOAL_3]
 - `PROJECT_GOAL.md`: [OTHER_CONSTRAINTS]
-- ... and 55 more
+- ... and 60 more

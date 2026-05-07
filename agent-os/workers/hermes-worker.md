@@ -27,6 +27,7 @@
 3. [`agent-os/worker-contract.md`](../worker-contract.md)
 4. [`agent-os/state/system-state.json`](../state/system-state.json)
 5. [`HERMES.md`](../../HERMES.md)
+6. [`agent-os/tool-boundaries.md`](../tool-boundaries.md) — canonical tool-use boundary policy
 
 ## Required Output
 

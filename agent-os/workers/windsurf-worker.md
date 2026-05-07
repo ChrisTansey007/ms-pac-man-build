@@ -26,6 +26,7 @@
 4. [`agent-os/state/system-state.json`](../state/system-state.json)
 5. [`.windsurf/README.md`](../../.windsurf/README.md)
 6. [`.windsurf/workflows/`](../../.windsurf/workflows/) (session workflows)
+7. [`agent-os/tool-boundaries.md`](../tool-boundaries.md) — canonical tool-use boundary policy
 
 ## Required Output
 

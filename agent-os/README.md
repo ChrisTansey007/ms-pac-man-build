@@ -46,6 +46,7 @@ agent-os/
 ├── worktree-strategy.md          ← Parallel worker worktree rules
 ├── provider-routing.md           ← Provider tier routing guidance
 ├── prompt-injection-policy.md    ← External content safety rules
+├── tool-boundaries.md            ← Canonical tool-use boundary policy
 ├── worker-contract.md            ← Universal obligations for all workers
 ├── task-lifecycle.md             ← Task state machine
 ├── definition-of-done.md         ← What "done" means
@@ -101,6 +102,7 @@ agent-os/
 - [`worktree-strategy.md`](./worktree-strategy.md) — Parallel worker worktree rules
 - [`provider-routing.md`](./provider-routing.md) — Provider tier routing guidance
 - [`prompt-injection-policy.md`](./prompt-injection-policy.md) — External content safety rules
+- [`tool-boundaries.md`](./tool-boundaries.md) — Canonical tool-use boundary policy
 - [`../HUMAN_OWNER_GUIDE.md`](../HUMAN_OWNER_GUIDE.md) — Guide for human owners
 - [`../TEMPLATE_READINESS.md`](../TEMPLATE_READINESS.md) — Template readiness gates
 - [`../prompt-library/`](../prompt-library/) — Copy/paste worker prompts
