@@ -1,25 +1,14 @@
 # Current Scope
 
-> **Customize after forking. Defines what is in scope for the current phase.**
+The current scope of the Ms. Pac-Man Build project includes:
+- Faithful recreation of the original 1982 Ms. Pac-Man arcade game
+- Web-based implementation using HTML5, TypeScript, and Canvas/WebGL
+- All four original maze layouts
+- Complete ghost AI with distinct behaviors for Blinky, Pinky, Inky, and Clyde
+- Fruit bonus system with correct timing and sprites
+- Intermissions (cutscenes) between levels
+- Sound effects and music matching the original arcade
+- Score tracking and high score persistence via LocalStorage
+- Responsive design for desktop and mobile browsers
 
-## In Scope
-
-1. [SCOPE_ITEM_1]
-2. [SCOPE_ITEM_2]
-3. [SCOPE_ITEM_3]
-
-## Phase
-
-- **Current phase:** [PHASE_NUMBER or NAME]
-- **Phase goal:** [PHASE_GOAL]
-
-## Boundaries
-
-- [BOUNDARY_1]
-- [BOUNDARY_2]
-
-## Related Files
-
-- [`vision.md`](./vision.md) — Long-term vision
-- [`non-goals.md`](./non-goals.md) — What is explicitly out
-- [`../01-product/roadmap.md`](../01-product/roadmap.md) — Product roadmap
+The project focuses exclusively on replicating the original gameplay experience without additions, modifications, or reinterpretations of the core mechanics.

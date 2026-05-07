@@ -1,0 +1,18 @@
+{
+  "task_id": "TASK-0002-setup-tooling-scaffolding",
+  "claimed_by": "hermes",
+  "claimed_at": "2026-05-07T21:15:00Z",
+  "branch": "agent/hermes/TASK-0002-setup-tooling-scaffolding",
+  "status": "active",
+  "files_expected": [
+    "package.json",
+    "tsconfig.json",
+    "jest.config.js",
+    ".eslintrc.js",
+    "src/",
+    "tests/",
+    "assets/"
+  ],
+  "expires_at": "2026-05-08T02:15:00Z",
+  "notes": "Setting up TypeScript, Jest, ESLint, and basic project scaffolding for Ms. Pac-Man game"
+}
