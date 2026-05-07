@@ -23,6 +23,7 @@
 - The `short-description` should be 2-4 words summarizing the change.
 - Workers must create their branch AFTER claiming a task and BEFORE starting work.
 - Branches should be created from `main` (or the current default branch).
+- In multi-worker and hybrid mode, pair the branch with a dedicated git worktree when parallel edits are expected.
 
 ## Examples
 
@@ -52,3 +53,4 @@ fix/TASK-0008-fix-login-redirect
 - [`task-lifecycle.md`](./task-lifecycle.md) — Task state machine
 - [`file-ownership.md`](./file-ownership.md) — Collision avoidance
 - [`execution-modes.md`](./execution-modes.md) — Execution modes
+- [`worktree-strategy.md`](./worktree-strategy.md) — Parallel worker checkout strategy

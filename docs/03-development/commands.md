@@ -32,6 +32,10 @@
 | `npm run validate:agent-os` | Validate agent-os structure |
 | `npm run validate:tasks` | Validate task files |
 | `npm run validate:handoffs` | Validate handoff files |
+| `npm run validate:mcp` | Validate MCP example config |
+| `npm run validate:provider-tiers` | Validate provider routing starter data |
+| `npm run validate:secrets` | Scan for obvious secret patterns |
+| `npm run setup:worktree` | Create a worker-specific git worktree |
 | `npm run status:generate` | Generate status report |
 | `npm run check:dod` | Check definition of done |
 

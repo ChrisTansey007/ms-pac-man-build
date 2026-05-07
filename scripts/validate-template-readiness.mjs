@@ -25,7 +25,11 @@ const CHECKS = {
     'agent-os/README.md', 'agent-os/assignment-model.md', 'agent-os/execution-modes.md',
     'agent-os/worker-contract.md', 'agent-os/task-lifecycle.md', 'agent-os/definition-of-done.md',
     'agent-os/verification-gates.md', 'agent-os/tasks/task-template.md', 'agent-os/handoffs/handoff-template.md',
-    'agent-os/mcp.md', 'agent-os/prompt-injection-policy.md'
+    'agent-os/mcp.md', 'agent-os/worktree-strategy.md', 'agent-os/provider-routing.md',
+    'agent-os/prompt-injection-policy.md'
+  ],
+  agentOsStateFiles: [
+    'agent-os/state/provider-tiers.json'
   ],
 
   promptLibrary: [
@@ -72,6 +76,7 @@ function check(name, files) {
 check('Root Docs', CHECKS.rootDocs);
 check('Agent OS Dirs', CHECKS.agentOsDirs);
 check('Agent OS Files', CHECKS.agentOsFiles);
+check('Agent OS State Files', CHECKS.agentOsStateFiles);
 check('Prompt Library', CHECKS.promptLibrary);
 check('Examples', CHECKS.examples);
 check('MCP Config', CHECKS.mcpFiles);

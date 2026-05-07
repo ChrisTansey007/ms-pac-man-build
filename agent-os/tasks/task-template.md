@@ -28,6 +28,14 @@ backlog | ready | claimed | in-progress | review | blocked | done
 
 - [CAPABILITY]
 
+## Required Tier
+
+unspecified | frontier | mid | fast | local
+
+## Cost Ceiling
+
+unspecified | low | moderate | high
+
 ## Required MCP Servers
 
 - [SERVER_NAME] — [why this server is needed]

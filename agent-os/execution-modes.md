@@ -60,6 +60,7 @@ Multiple workers divide work by task, role, capability, or phase.
 - Review should be performed by a different worker when possible.
 - No worker may close its own task without independent verification.
 - All continuation context must be written into repo files.
+- When two or more workers are active, use separate git worktrees to prevent file collisions.
 
 ### Best For
 
@@ -176,4 +177,5 @@ You can switch modes at any time by updating `assignment-state.json`. Considerat
 - [`assignment-model.md`](./assignment-model.md) — Full assignment hierarchy
 - [`worker-switching-protocol.md`](./worker-switching-protocol.md) — Reassignment protocol
 - [`task-routing-rules.md`](./task-routing-rules.md) — Task flow through the system
+- [`worktree-strategy.md`](./worktree-strategy.md) — Worktree rules for parallel execution
 - [`state/assignment-state.json`](./state/assignment-state.json) — Current mode and assignments

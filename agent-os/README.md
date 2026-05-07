@@ -43,6 +43,8 @@ agent-os/
 ├── startup-sequence.md           ← Canonical worker startup order
 ├── glossary.md                   ← Core ROWS terminology
 ├── mcp.md                        ← Optional MCP policy and setup
+├── worktree-strategy.md          ← Parallel worker worktree rules
+├── provider-routing.md           ← Provider tier routing guidance
 ├── prompt-injection-policy.md    ← External content safety rules
 ├── worker-contract.md            ← Universal obligations for all workers
 ├── task-lifecycle.md             ← Task state machine
@@ -68,7 +70,9 @@ agent-os/
     ├── template-readiness/       ← Template readiness reports
     ├── links/                    ← Link validation reports
     ├── placeholders/             ← Placeholder audit reports
-    └── locks/                    ← Lock validation reports
+    ├── locks/                    ← Lock validation reports
+    ├── provider-routing/         ← Provider routing validation reports
+    └── security/                 ← Secret scan reports
 ```
 
 ## Quick Start for Workers
@@ -92,6 +96,8 @@ agent-os/
 - [`startup-sequence.md`](./startup-sequence.md) — Canonical worker startup order
 - [`glossary.md`](./glossary.md) — Core ROWS terminology
 - [`mcp.md`](./mcp.md) — Optional MCP policy and setup
+- [`worktree-strategy.md`](./worktree-strategy.md) — Parallel worker worktree rules
+- [`provider-routing.md`](./provider-routing.md) — Provider tier routing guidance
 - [`prompt-injection-policy.md`](./prompt-injection-policy.md) — External content safety rules
 - [`../HUMAN_OWNER_GUIDE.md`](../HUMAN_OWNER_GUIDE.md) — Guide for human owners
 - [`../TEMPLATE_READINESS.md`](../TEMPLATE_READINESS.md) — Template readiness gates
