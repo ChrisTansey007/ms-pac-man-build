@@ -46,9 +46,9 @@ $ npm run build
 
 ## Evidence Produced
 
-- Test output saved to `reports/verification/TASK-0003-test-output.txt`
-- Screenshots saved to `reports/verification/TASK-0003-desktop.png` and `TASK-0003-mobile.png`
-- Screen recording saved to `reports/verification/TASK-0003-drag-demo.mp4`
+- Test output saved to `agent-os/reports/verification/EXAMPLE-test-output.txt`
+- Screenshots saved to `agent-os/reports/verification/EXAMPLE-desktop.png` and `EXAMPLE-mobile.png`
+- Recording note saved to `agent-os/reports/verification/EXAMPLE-recording-note.md`
 
 ## What Changed
 

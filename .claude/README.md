@@ -11,7 +11,7 @@ Claude is a worker optimized for architecture, large-context reasoning, document
 ```
 .claude/
 ├── README.md           ← This file
-└── rules/              ← Project-specific Claude rules
+└── rules/              ← Project-specific Claude rules (starter stubs)
     ├── backend.md      ← Backend development rules
     ├── frontend.md     ← Frontend development rules
     ├── docs.md         ← Documentation rules
@@ -22,6 +22,8 @@ Claude is a worker optimized for architecture, large-context reasoning, document
 ## Rules Directory
 
 The `rules/` directory contains project-specific rules that Claude should follow. These are **additive** to `AGENTS.md` — they provide domain-specific guidance, not constitutional overrides.
+
+The files currently ship as starter stubs so a fork can make them project-specific without guessing at the intended shape.
 
 Customize these files after forking to match your project's conventions.
 

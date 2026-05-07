@@ -12,6 +12,7 @@ Track every significant architectural decision. Each entry links to a full ADR d
 |-----|-------|--------|------|
 | [ADR-0001](../02-architecture/decisions/ADR-0001-repo-orchestrated-worker-system.md) | Repo-Orchestrated Worker System | Accepted | 2026-05-06 |
 | [ADR-0002](../02-architecture/decisions/ADR-0002-template-fork-workflow.md) | Template Fork Workflow | Accepted | 2026-05-06 |
+| [ADR-0003](../02-architecture/decisions/ADR-0003-flexible-worker-assignment.md) | Flexible Worker Assignment Model | Accepted | 2026-05-06 |
 
 *Add new decisions above this line.*
 

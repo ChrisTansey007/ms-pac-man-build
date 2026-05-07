@@ -35,8 +35,9 @@
 | `npm run validate:mcp` | Validate MCP example config |
 | `npm run validate:provider-tiers` | Validate provider routing starter data |
 | `npm run validate:secrets` | Scan for obvious secret patterns |
+| `npm run validate:state-consistency` | Cross-check paired JSON/Markdown state files |
 | `npm run setup:worktree` | Create a worker-specific git worktree |
-| `npm run status:generate` | Generate status report |
+| `npm run status:generate` | Generate STATUS.md and dated status report |
 | `npm run check:dod` | Check definition of done |
 
 ## Database

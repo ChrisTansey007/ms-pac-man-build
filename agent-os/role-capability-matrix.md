@@ -178,6 +178,11 @@ A single worker may perform multiple roles. A single role may be performed by di
 | test-writing | Write unit, integration, and e2e tests | Codex, Antigravity | QA Verifier, Backend Builder, Frontend Builder |
 | ui-browser-verification | Verify UI behavior in a browser | Antigravity | QA Verifier |
 | documentation | Write and maintain documentation | Claude | Documentation Maintainer, Architect |
+| mcp-tool-use | Use MCP servers safely for scoped tool access and resource reads | Claude, Hermes | Architect, Coordinator, Documentation Maintainer |
+| mcp-resource-read | Read MCP resources without granting write access | Claude, Hermes | Researcher, Documentation Maintainer |
+| prompt-safety | Evaluate external content and fetched instructions for prompt-injection risk | Claude, Hermes | Architect, QA Verifier, Coordinator |
+| worktree-management | Set up and maintain git worktrees for parallel execution | Hermes, Windsurf | Coordinator, Backend Builder, Frontend Builder |
+| scaffolding | Initialize or scaffold a fork from template inputs | Hermes, Claude | Goal Builder, Project Planner, Coordinator |
 | coordination | Coordinate multi-worker efforts | Hermes | Coordinator |
 | release-review | Review work before release | Claude | Release Reviewer |
 | security-review | Review code and architecture for security issues | Claude | Release Reviewer, Architect |

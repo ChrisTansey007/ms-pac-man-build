@@ -38,11 +38,11 @@
 
 ## Evidence Reviewed
 
-- Test output: `reports/verification/TASK-0003-test-output.txt`
-- Desktop screenshot: `reports/verification/TASK-0003-desktop.png`
-- Mobile screenshot: `reports/verification/TASK-0003-mobile.png`
-- Drag demo recording: `reports/verification/TASK-0003-drag-demo.mp4`
-- Handoff: `handoffs/active/TASK-0003-windsurf-2026-05-06.md`
+- Test output: `agent-os/reports/verification/EXAMPLE-test-output.txt`
+- Desktop screenshot: `agent-os/reports/verification/EXAMPLE-desktop.png`
+- Mobile screenshot: `agent-os/reports/verification/EXAMPLE-mobile.png`
+- Recording note: `agent-os/reports/verification/EXAMPLE-recording-note.md`
+- Handoff: `agent-os/handoffs/active/EXAMPLE-handoff.md`
 
 ## Issues Found
 

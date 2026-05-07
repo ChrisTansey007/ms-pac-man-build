@@ -1,13 +1,18 @@
 # Placeholder Audit Report — 2026-05-07
-> Generated: 2026-05-07T01:56:53.415Z
+> Generated: 2026-05-07T02:09:26.475Z
 
 ## Summary
-- Intentional placeholders found: 70
+- Intentional placeholders found: 76
 - Vague placeholders found: 0
 
 ## No vague placeholders found.
 
 ## Intentional Placeholders (Allowed)
+- `.claude/rules/backend.md`: [PROJECT_NAME]
+- `.claude/rules/docs.md`: [PROJECT_NAME]
+- `.claude/rules/frontend.md`: [PROJECT_NAME]
+- `.claude/rules/orchestration.md`: [PROJECT_NAME]
+- `.claude/rules/testing.md`: [PROJECT_NAME]
 - `AGENTS.md`: [PROJECT_NAME]
 - `CLAUDE.md`: [PROJECT_NAME]
 - `PROJECT_GOAL.md`: [PROJECT_NAME]
@@ -23,9 +28,4 @@
 - `PROJECT_GOAL.md`: [NON_GOAL_2]
 - `PROJECT_GOAL.md`: [NON_GOAL_3]
 - `PROJECT_GOAL.md`: [OTHER_CONSTRAINTS]
-- `PROJECT_GOAL.md`: [OTHER_TECH]
-- `PROJECT_GOAL.md`: [CRITERION_1]
-- `PROJECT_GOAL.md`: [CRITERION_2]
-- `PROJECT_GOAL.md`: [CRITERION_3]
-- `PROJECT_GOAL.md`: [FIRST_MILESTONE]
-- ... and 50 more
+- ... and 56 more

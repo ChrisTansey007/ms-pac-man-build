@@ -21,6 +21,7 @@ const scripts = [
   { name: 'MCP Validation', cmd: 'node scripts/validate-mcp.mjs' },
   { name: 'Provider Tier Validation', cmd: 'node scripts/validate-provider-tiers.mjs' },
   { name: 'Secret Scan', cmd: 'node scripts/validate-secrets.mjs' },
+  { name: 'State Consistency Validation', cmd: 'node scripts/validate-state-consistency.mjs' },
   { name: 'Template Readiness', cmd: 'node scripts/validate-template-readiness.mjs' },
   { name: 'Definition of Done', cmd: 'node scripts/check-definition-of-done.mjs' }
 ];

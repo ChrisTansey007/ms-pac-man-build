@@ -1,0 +1,13 @@
+EXAMPLE verification output
+---------------------------
+
+This is a stub artifact showing where test output would live in a real task.
+
+Command:
+  npm test -- --coverage
+
+Result:
+  PASS
+
+Notes:
+  Replace this file with real task evidence after forking.

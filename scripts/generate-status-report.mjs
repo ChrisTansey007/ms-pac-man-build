@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // generate-status-report.mjs — Generate a Markdown status report from state files.
 
-import { readFileSync, readdirSync, existsSync, writeFileSync, mkdirSync } from 'fs';
+import { readFileSync, readdirSync, existsSync, writeFileSync, mkdirSync, statSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -10,6 +10,7 @@ const root = join(__dirname, '..');
 const stateDir = join(root, 'agent-os', 'state');
 const tasksDir = join(root, 'agent-os', 'tasks');
 const handoffsDir = join(root, 'agent-os', 'handoffs', 'active');
+const blockedDir = join(root, 'agent-os', 'tasks', 'blocked');
 const reportsDir = join(root, 'agent-os', 'reports', 'status');
 
 const now = new Date().toISOString().split('T')[0];
@@ -37,11 +38,25 @@ for (const folder of LIFECYCLE) {
 }
 
 // Count handoffs
-const handoffCount = existsSync(handoffsDir) ? readdirSync(handoffsDir).filter(f => f.endsWith('.md') && f !== 'README.md').length : 0;
+const handoffFiles = existsSync(handoffsDir)
+  ? readdirSync(handoffsDir).filter(f => f.endsWith('.md') && f !== 'README.md')
+  : [];
+const handoffCount = handoffFiles.length;
+
+// Count blocked tasks
+const blockedTasks = existsSync(blockedDir)
+  ? readdirSync(blockedDir).filter(f => f.endsWith('.md') && f !== 'README.md')
+  : [];
+
+// Pick most recent handoffs for a quick human scan
+const recentHandoffs = handoffFiles
+  .map(file => ({ file, mtime: statSync(join(handoffsDir, file)).mtimeMs }))
+  .sort((a, b) => b.mtime - a.mtime)
+  .slice(0, 5);
 
 // Build report
 const lines = [];
-lines.push(`# Status Report — ${now}`);
+lines.push(`# STATUS.md — ${now}`);
 lines.push(`> Generated: ${timestamp}`);
 lines.push('');
 lines.push('## System');
@@ -77,8 +92,25 @@ if (assignments.length > 0) {
   }
 }
 lines.push('');
-lines.push('## Handoffs');
+lines.push('## Recent Handoffs');
 lines.push(`- Active handoffs: ${handoffCount}`);
+if (recentHandoffs.length === 0) {
+  lines.push('- None');
+} else {
+  for (const handoff of recentHandoffs) {
+    lines.push(`- ${handoff.file}`);
+  }
+}
+lines.push('');
+lines.push('## Blocked Tasks');
+lines.push(`- Blocked tasks: ${blockedTasks.length}`);
+if (blockedTasks.length === 0) {
+  lines.push('- None');
+} else {
+  for (const task of blockedTasks) {
+    lines.push(`- ${task}`);
+  }
+}
 lines.push('');
 lines.push('## Risks');
 const risks = riskRegister.risks || [];
@@ -100,5 +132,7 @@ if (!existsSync(reportsDir)) {
 
 const outPath = join(reportsDir, `status-${now}.md`);
 writeFileSync(outPath, report);
+writeFileSync(join(root, 'STATUS.md'), report);
+console.log(`Status report written to: STATUS.md`);
 console.log(`Status report written to: agent-os/reports/status/status-${now}.md`);
 console.log(report);
