@@ -29,6 +29,7 @@
 
 | Command | Description |
 |---------|-------------|
+| `npm run validate:json` | Validate JSON syntax and state schemas |
 | `npm run validate:agent-os` | Validate agent-os structure |
 | `npm run validate:tasks` | Validate task files |
 | `npm run validate:handoffs` | Validate handoff files |

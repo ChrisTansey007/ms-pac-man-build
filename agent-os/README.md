@@ -60,6 +60,7 @@ agent-os/
 ├── checklists/                   ← Operational checklists
 ├── schedules/                    ← Cadence definitions
 ├── state/                        ← System state (JSON)
+├── schemas/                      ← JSON schemas for state files
 ├── locks/                        ← Advisory file locks
 ├── reassignment/                 ← Worker reassignment records
 └── reports/                      ← Generated reports

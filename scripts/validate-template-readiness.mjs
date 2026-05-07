@@ -19,7 +19,7 @@ const CHECKS = {
     'agent-os/workers', 'agent-os/roles', 'agent-os/tasks/backlog',
     'agent-os/tasks/ready', 'agent-os/tasks/claimed', 'agent-os/tasks/in-progress',
     'agent-os/tasks/review', 'agent-os/tasks/blocked', 'agent-os/tasks/done',
-    'agent-os/handoffs/active', 'agent-os/locks', 'agent-os/reports'
+    'agent-os/handoffs/active', 'agent-os/locks', 'agent-os/reports', 'agent-os/schemas'
   ],
   agentOsFiles: [
     'agent-os/README.md', 'agent-os/assignment-model.md', 'agent-os/execution-modes.md',

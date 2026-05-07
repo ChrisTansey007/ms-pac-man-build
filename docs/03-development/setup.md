@@ -42,6 +42,8 @@ npm run dev
 
 See [`commands.md`](./commands.md) for all available commands.
 
+`npm run validate:json` validates JSON syntax and enforces the repo's state schemas when a matching schema exists in `agent-os/schemas/`.
+
 For multi-worker work, run `npm run setup:worktree -- <worker> <task-id>` before starting parallel edits so each worker gets an isolated checkout.
 
 ## Related Files
