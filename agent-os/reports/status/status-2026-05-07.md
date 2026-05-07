@@ -1,5 +1,5 @@
 # STATUS.md — 2026-05-07
-> Generated: 2026-05-07T02:05:23.243Z
+> Generated: 2026-05-07T03:05:01.799Z
 
 ## System
 - **Repo:** [PROJECT_NAME]
@@ -52,3 +52,7 @@
   - **RISK-008:** Stale reassignment (low/high) — monitored
   - **RISK-009:** Unverified solo-worker completion (medium/high) — monitored
   - **RISK-010:** Incorrect capability routing (medium/medium) — monitored
+
+## Milestones
+- Total milestones tracked: 1
+  - **MILESTONE-0001:** Starter template polish — planned

@@ -29,6 +29,9 @@ try { assignmentState = JSON.parse(readFileSync(join(stateDir, 'assignment-state
 let riskRegister = {};
 try { riskRegister = JSON.parse(readFileSync(join(stateDir, 'risk-register.json'), 'utf-8')); } catch {}
 
+let milestoneState = {};
+try { milestoneState = JSON.parse(readFileSync(join(stateDir, 'milestones.json'), 'utf-8')); } catch {}
+
 // Count tasks by state
 const LIFECYCLE = ['backlog', 'ready', 'claimed', 'in-progress', 'review', 'blocked', 'done'];
 const taskCounts = {};
@@ -119,6 +122,18 @@ const activeRisks = risks.filter(r => r.status !== 'resolved');
 if (activeRisks.length > 0) {
   for (const r of activeRisks) {
     lines.push(`  - **${r.id}:** ${r.title} (${r.likelihood}/${r.impact}) — ${r.status}`);
+  }
+}
+lines.push('');
+
+lines.push('## Milestones');
+const milestones = milestoneState.milestones || [];
+lines.push(`- Total milestones tracked: ${milestones.length}`);
+if (milestones.length === 0) {
+  lines.push('- None');
+} else {
+  for (const milestone of milestones) {
+    lines.push(`  - **${milestone.id}:** ${milestone.title} — ${milestone.status}`);
   }
 }
 lines.push('');

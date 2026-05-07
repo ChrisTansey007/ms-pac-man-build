@@ -63,6 +63,7 @@ Review handoffs and verification evidence. Merge verified work.
 | **Gemini** | Research, long-document analysis, multimodal analysis, planning |
 | **Hermes** | Task decomposition, coordination proposals, queue review, status reporting |
 | **Antigravity** | Agentic execution, UI/browser verification, artifact production |
+| **Cursor** | Template-aware repo navigation, edits, and lightweight orchestration |
 
 > **GitHub Copilot is intentionally not used in this system.** No Copilot-specific instruction files exist.
 
@@ -141,6 +142,7 @@ See [`agent-os/execution-modes.md`](./agent-os/execution-modes.md) for full deta
 ├── .gemini/                   ← Gemini settings
 ├── .codex/                    ← Codex adapter
 ├── .antigravity/              ← Antigravity policies
+├── .cursor/                   ← Cursor adapter
 ├── src/                       ← Application source code (empty in template)
 └── tests/                     ← Tests (empty in template)
 ```

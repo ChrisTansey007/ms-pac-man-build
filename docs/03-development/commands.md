@@ -8,6 +8,8 @@
 |---------|-------------|
 | `npm run dev` | Start development server |
 | `npm run init` | Initialize a fresh fork and replace starter placeholders |
+| `npm run lint:md` | Run lightweight markdown lint |
+| `npm run check:scope` | Compare task scope to git diff |
 | `npm run build` | Build for production |
 | `npm start` | Start production server |
 

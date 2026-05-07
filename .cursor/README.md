@@ -1,0 +1,43 @@
+# .cursor — Cursor Adapter Directory
+
+This directory contains Cursor-specific rules and configuration for the ROWS system.
+
+## Purpose
+
+Cursor is treated as a worker adapter like Windsurf or Claude. The files in this directory provide Cursor-specific guidance that supplements the primary constitution.
+
+## Directory Structure
+
+```
+.cursor/
+├── README.md           ← This file
+└── rules/              ← Project-specific Cursor rules (starter stubs)
+    ├── backend.md      ← Backend development rules
+    ├── frontend.md     ← Frontend development rules
+    ├── docs.md         ← Documentation rules
+    ├── testing.md      ← Testing rules
+    └── orchestration.md ← Multi-agent orchestration rules
+```
+
+## Rules Directory
+
+The `rules/` directory contains project-specific rules that Cursor should follow. These are additive to `AGENTS.md` — they provide domain-specific guidance, not constitutional overrides.
+
+The files currently ship as starter stubs so a fork can make them project-specific without guessing at the intended shape.
+
+Customize these files after forking to match your project's conventions.
+
+## Startup Sequence
+
+Before any action, Cursor must read:
+1. [`AGENTS.md`](../AGENTS.md)
+2. [`PROJECT_GOAL.md`](../PROJECT_GOAL.md)
+3. [`agent-os/worker-contract.md`](../agent-os/worker-contract.md)
+4. [`agent-os/workers/cursor-worker.md`](../agent-os/workers/cursor-worker.md)
+5. [`agent-os/state/system-state.json`](../agent-os/state/system-state.json)
+6. Relevant files in `./rules/` based on the task domain.
+
+## Related Files
+
+- [`CURSOR.md`](../CURSOR.md) — Root-level Cursor adapter
+- [`agent-os/workers/cursor-worker.md`](../agent-os/workers/cursor-worker.md) — Worker role definition

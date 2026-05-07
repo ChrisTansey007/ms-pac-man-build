@@ -54,17 +54,20 @@ agent-os/
 ├── escalation-rules.md           ← When and how to escalate
 ├── branch-strategy.md            ← Git branch naming conventions
 ├── file-ownership.md             ← Collision avoidance
-├── workers/                      ← Worker capability definitions
-├── roles/                        ← Role definitions (jobs)
-├── tasks/                        ← Task lifecycle folders
-├── handoffs/                     ← Worker handoff files
-├── checklists/                   ← Operational checklists
-├── schedules/                    ← Cadence definitions
-├── state/                        ← System state (JSON)
-├── schemas/                      ← JSON schemas for state files
-├── locks/                        ← Advisory file locks
-├── reassignment/                 ← Worker reassignment records
-└── reports/                      ← Generated reports
+├── workers/               ← Worker capability definitions
+├── roles/                 ← Role definitions (jobs)
+├── tasks/                 ← Task lifecycle folders
+├── handoffs/              ← Worker handoff files
+├── checkpoints/           ← Partial-progress checkpoint notes
+├── proposals/             ← Coordination proposals
+├── milestones/            ← Milestone templates and planning state
+├── checklists/            ← Operational checklists
+├── schedules/             ← Cadence definitions
+├── state/                 ← System state (JSON)
+├── locks/                 ← Advisory file locks
+├── reassignment/          ← Worker reassignment records
+├── observability.md       ← Observability attachment guidance
+└── reports/               ← Generated reports
     ├── audits/                   ← Audit reports
     ├── status/                   ← Status reports
     ├── verification/             ← Verification reports

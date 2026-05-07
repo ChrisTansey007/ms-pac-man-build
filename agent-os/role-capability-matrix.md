@@ -205,6 +205,7 @@ A single worker may perform multiple roles. A single role may be performed by di
 | **Claude** | architecture-planning, documentation, security-review, release-review, large-context reasoning |
 | **Gemini** | research, long-document analysis, project-planning |
 | **Windsurf** | file-editing, code-implementation, repo-navigation, scaffolding |
+| **Cursor** | file-editing, repo-navigation, scaffolding, lightweight orchestration |
 | **Antigravity** | ui-browser-verification, test-writing, evidence-production |
 | **Hermes** | task-decomposition, coordination, goal-decomposition, project-planning |
 
