@@ -61,6 +61,36 @@
       "common_roles": ["documentation-maintainer", "architect"],
       "evidence_expected": "Updated docs, ADRs, API documentation"
     },
+    "mcp-tool-use": {
+      "description": "Use MCP servers safely for scoped tool access and resource reads",
+      "preferred_workers": ["claude", "hermes"],
+      "common_roles": ["architect", "coordinator", "documentation-maintainer"],
+      "evidence_expected": "Validated MCP config, notes on scoped server usage"
+    },
+    "mcp-resource-read": {
+      "description": "Read MCP resources without granting write access",
+      "preferred_workers": ["claude", "hermes"],
+      "common_roles": ["researcher", "documentation-maintainer"],
+      "evidence_expected": "MCP resource output and summary"
+    },
+    "prompt-safety": {
+      "description": "Evaluate external content and fetched instructions for prompt-injection risk",
+      "preferred_workers": ["claude", "hermes"],
+      "common_roles": ["architect", "qa-verifier", "coordinator"],
+      "evidence_expected": "Safety review notes, confirmation of repo-policy precedence"
+    },
+    "worktree-management": {
+      "description": "Set up and maintain git worktrees for parallel execution",
+      "preferred_workers": ["hermes", "windsurf"],
+      "common_roles": ["coordinator", "backend-builder", "frontend-builder"],
+      "evidence_expected": "Worktree path, branch name, clean isolation evidence"
+    },
+    "scaffolding": {
+      "description": "Initialize or scaffold a fork from template inputs",
+      "preferred_workers": ["hermes", "claude"],
+      "common_roles": ["goal-builder", "project-planner", "coordinator"],
+      "evidence_expected": "Generated project settings and replaced placeholders"
+    },
     "coordination": {
       "description": "Coordinate multi-worker efforts and task routing",
       "preferred_workers": ["hermes"],
@@ -128,5 +158,5 @@
       "evidence_expected": "Test output, screenshots, logs, verification reports"
     }
   },
-  "last_updated": "2026-05-06T13:50:00-04:00"
+  "last_updated": "2026-05-07T01:46:35Z"
 }

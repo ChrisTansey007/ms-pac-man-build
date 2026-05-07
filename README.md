@@ -1,5 +1,8 @@
 # ROWS — Repo-Orchestrated Worker System
 
+[![validate-agent-os](https://github.com/ChrisTansey007/rows-template/actions/workflows/validate-agent-os.yml/badge.svg)](https://github.com/ChrisTansey007/rows-template/actions/workflows/validate-agent-os.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+
 > **The repository is the orchestrator. Every AI tool is a worker.**
 
 ROWS is a GitHub template repository that turns your repo into an operating system for multi-agent development. It owns the rules, the task queue, the state, the handoffs, the checklists, the verification gates, and the definition of done. AI workers — Windsurf, Codex, Claude, Gemini, Hermes, and Antigravity — execute only repo-defined tasks under repo-defined rules.
@@ -156,6 +159,7 @@ npm run validate:decisions     # Validate ADR/decision files
 npm run validate:links         # Check for broken links
 npm run validate:placeholders  # Audit placeholder usage
 npm run validate:locks         # Validate lock files
+npm run validate:mcp           # Validate optional MCP config
 npm run validate:template      # Check template readiness
 npm run status:generate        # Generate a status report
 npm run assignments:report     # Generate an assignment report

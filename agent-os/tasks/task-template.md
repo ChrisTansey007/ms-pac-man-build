@@ -28,6 +28,11 @@ backlog | ready | claimed | in-progress | review | blocked | done
 
 - [CAPABILITY]
 
+## Required MCP Servers
+
+- [SERVER_NAME] — [why this server is needed]
+- [SERVER_NAME] — [read/write scope and constraints]
+
 ## Preferred Workers
 
 - [WORKER_NAME]

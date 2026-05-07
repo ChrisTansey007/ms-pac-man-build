@@ -4,10 +4,9 @@
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) v[VERSION]+
+- [Node.js](https://nodejs.org/) v20+
 - [Git](https://git-scm.com/)
-- [DATABASE] v[VERSION]
-- [Other prerequisites]
+- Any project-specific services your fork requires (database, queue, etc.)
 
 ## Quick Start
 
@@ -22,6 +21,7 @@ npm install
 # Set up environment
 cp .env.example .env
 # Edit .env with your configuration
+# Keep .env.example committed; keep .env local and secret-free
 
 # Run database migrations
 npm run migrate

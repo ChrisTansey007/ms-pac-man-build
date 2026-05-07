@@ -14,16 +14,16 @@
 
 | Command | Description |
 |---------|-------------|
-| `npm test` | Run all tests |
-| `npm run test:watch` | Run tests in watch mode |
-| `npm run test:coverage` | Run tests with coverage report |
+| `npm test` | Template-stage readiness check; replace with real tests after forking |
+| `npm run test:watch` | Template-stage placeholder that aliases `npm test` |
+| `npm run test:coverage` | Template-stage placeholder that aliases `npm test` |
 
 ## Linting & Formatting
 
 | Command | Description |
 |---------|-------------|
-| `npm run lint` | Run linter |
-| `npm run format` | Format code |
+| `npm run lint` | Template-stage placeholder; validates intentional placeholders |
+| `npm run format` | Template-stage placeholder for your formatter of choice |
 
 ## ROWS System
 
@@ -39,8 +39,8 @@
 
 | Command | Description |
 |---------|-------------|
-| `npm run migrate` | Run database migrations |
-| `npm run migrate:rollback` | Rollback last migration |
+| `npm run migrate` | Template-stage placeholder for database migrations |
+| `npm run migrate:rollback` | Template-stage placeholder for rollback support |
 
 ## Related Files
 

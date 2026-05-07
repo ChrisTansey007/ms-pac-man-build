@@ -18,6 +18,7 @@ const scripts = [
   { name: 'Link Validation', cmd: 'node scripts/validate-links.mjs' },
   { name: 'Placeholder Validation', cmd: 'node scripts/validate-placeholders.mjs' },
   { name: 'Lock Validation', cmd: 'node scripts/validate-locks.mjs' },
+  { name: 'MCP Validation', cmd: 'node scripts/validate-mcp.mjs' },
   { name: 'Template Readiness', cmd: 'node scripts/validate-template-readiness.mjs' },
   { name: 'Definition of Done', cmd: 'node scripts/check-definition-of-done.mjs' }
 ];

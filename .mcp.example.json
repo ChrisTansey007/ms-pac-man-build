@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "filesystem-readonly": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
+    },
+    "git-readonly": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-git", "."]
+    }
+  }
+}

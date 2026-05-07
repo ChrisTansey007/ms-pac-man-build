@@ -48,6 +48,7 @@
 - [ ] `npm run validate:links` passes
 - [ ] `npm run validate:placeholders` passes
 - [ ] `npm run validate:locks` passes
+- [ ] `npm run validate:mcp` passes
 - [ ] `npm run validate:template` passes
 - [ ] `npm run check:dod` passes
 - [ ] `npm run audit` passes

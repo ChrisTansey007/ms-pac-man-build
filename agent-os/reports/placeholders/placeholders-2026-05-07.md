@@ -1,5 +1,5 @@
 # Placeholder Audit Report — 2026-05-07
-> Generated: 2026-05-07T01:20:22.570Z
+> Generated: 2026-05-07T01:49:15.957Z
 
 ## Summary
 - Intentional placeholders found: 70
@@ -8,24 +8,24 @@
 ## No vague placeholders found.
 
 ## Intentional Placeholders (Allowed)
-- `agent-os\handoffs\handoff-template.md`: [ROLE_NAME]
-- `agent-os\state\system-state.json`: [PROJECT_NAME]
-- `agent-os\tasks\backlog\TASK-0001-initialize-project-from-goal.md`: [PROJECT_NAME]
-- `agent-os\tasks\task-template.md`: [WORKER_NAME]
-- `agent-os\tasks\task-template.md`: [ROLE_NAME]
-- `agent-os\tasks\task-template.md`: [CAPABILITY]
 - `AGENTS.md`: [PROJECT_NAME]
 - `CLAUDE.md`: [PROJECT_NAME]
-- `docs\00-project-brief\non-goals.md`: [NON_GOAL_1]
-- `docs\00-project-brief\non-goals.md`: [NON_GOAL_2]
-- `docs\00-project-brief\non-goals.md`: [NON_GOAL_3]
-- `docs\00-project-brief\vision.md`: [PROJECT_NAME]
-- `docs\00-project-brief\vision.md`: [ONE_SENTENCE_GOAL]
-- `docs\01-product\prd.md`: [PROJECT_NAME]
-- `docs\01-product\prd.md`: [PRIMARY_USER]
-- `docs\01-product\prd.md`: [ONE_SENTENCE_GOAL]
-- `docs\02-architecture\api-contracts.md`: [PROJECT_NAME]
-- `docs\02-architecture\data-model.md`: [PROJECT_NAME]
-- `docs\02-architecture\security-model.md`: [PROJECT_NAME]
-- `docs\02-architecture\system-overview.md`: [PROJECT_NAME]
+- `PROJECT_GOAL.md`: [PROJECT_NAME]
+- `PROJECT_GOAL.md`: [PRIMARY_USER]
+- `PROJECT_GOAL.md`: [TECH_STACK]
+- `PROJECT_GOAL.md`: [DEPLOYMENT_TARGET]
+- `PROJECT_GOAL.md`: [ONE_SENTENCE_GOAL]
+- `PROJECT_GOAL.md`: [LONG_FORM_GOAL]
+- `PROJECT_GOAL.md`: [OUTCOME_1]
+- `PROJECT_GOAL.md`: [OUTCOME_2]
+- `PROJECT_GOAL.md`: [OUTCOME_3]
+- `PROJECT_GOAL.md`: [NON_GOAL_1]
+- `PROJECT_GOAL.md`: [NON_GOAL_2]
+- `PROJECT_GOAL.md`: [NON_GOAL_3]
+- `PROJECT_GOAL.md`: [OTHER_CONSTRAINTS]
+- `PROJECT_GOAL.md`: [OTHER_TECH]
+- `PROJECT_GOAL.md`: [CRITERION_1]
+- `PROJECT_GOAL.md`: [CRITERION_2]
+- `PROJECT_GOAL.md`: [CRITERION_3]
+- `PROJECT_GOAL.md`: [FIRST_MILESTONE]
 - ... and 50 more

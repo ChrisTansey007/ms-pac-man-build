@@ -3,6 +3,9 @@
   "version": "0.3.0",
   "description": "ROWS — Repo-Orchestrated Worker System template",
   "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "validate:json": "node scripts/validate-json.mjs",
     "validate:tasks": "node scripts/validate-task.mjs",
@@ -12,8 +15,16 @@
     "validate:links": "node scripts/validate-links.mjs",
     "validate:placeholders": "node scripts/validate-placeholders.mjs",
     "validate:locks": "node scripts/validate-locks.mjs",
+    "validate:mcp": "node scripts/validate-mcp.mjs",
     "validate:template": "node scripts/validate-template-readiness.mjs",
-    "validate:agent-os": "node scripts/validate-json.mjs && node scripts/validate-task.mjs && node scripts/validate-handoff.mjs && node scripts/validate-assignments.mjs && node scripts/validate-decisions.mjs && node scripts/validate-links.mjs && node scripts/validate-placeholders.mjs && node scripts/validate-locks.mjs && node scripts/validate-template-readiness.mjs",
+    "validate:agent-os": "node scripts/validate-json.mjs && node scripts/validate-task.mjs && node scripts/validate-handoff.mjs && node scripts/validate-assignments.mjs && node scripts/validate-decisions.mjs && node scripts/validate-links.mjs && node scripts/validate-placeholders.mjs && node scripts/validate-locks.mjs && node scripts/validate-mcp.mjs && node scripts/validate-template-readiness.mjs",
+    "test": "node scripts/validate-template-readiness.mjs && node -e \"console.log('Template-stage test placeholder. Add real tests after forking.')\"",
+    "test:watch": "npm test",
+    "test:coverage": "npm test",
+    "lint": "node scripts/validate-placeholders.mjs && node -e \"console.log('Template-stage lint placeholder. Add real linting after forking.')\"",
+    "format": "node -e \"console.log('Template-stage format placeholder. Add Prettier after forking.')\"",
+    "migrate": "node -e \"console.log('Template-stage migration placeholder. Add real migrations after forking.')\"",
+    "migrate:rollback": "node -e \"console.log('Template-stage rollback placeholder. Add real migrations after forking.')\"",
     "status:generate": "node scripts/generate-status-report.mjs",
     "assignments:report": "node scripts/generate-assignment-report.mjs",
     "check:dod": "node scripts/check-definition-of-done.mjs",

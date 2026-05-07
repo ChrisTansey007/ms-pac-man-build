@@ -40,6 +40,10 @@ agent-os/
 ├── role-capability-matrix.md     ← Role-to-capability mapping
 ├── worker-switching-protocol.md  ← Reassignment protocol
 ├── task-routing-rules.md         ← Task flow and routing
+├── startup-sequence.md           ← Canonical worker startup order
+├── glossary.md                   ← Core ROWS terminology
+├── mcp.md                        ← Optional MCP policy and setup
+├── prompt-injection-policy.md    ← External content safety rules
 ├── worker-contract.md            ← Universal obligations for all workers
 ├── task-lifecycle.md             ← Task state machine
 ├── definition-of-done.md         ← What "done" means
@@ -85,6 +89,10 @@ agent-os/
 - [`PROJECT_GOAL.md`](../PROJECT_GOAL.md) — Project definition
 - [`assignment-model.md`](./assignment-model.md) — Assignment hierarchy
 - [`execution-modes.md`](./execution-modes.md) — Execution modes
+- [`startup-sequence.md`](./startup-sequence.md) — Canonical worker startup order
+- [`glossary.md`](./glossary.md) — Core ROWS terminology
+- [`mcp.md`](./mcp.md) — Optional MCP policy and setup
+- [`prompt-injection-policy.md`](./prompt-injection-policy.md) — External content safety rules
 - [`../HUMAN_OWNER_GUIDE.md`](../HUMAN_OWNER_GUIDE.md) — Guide for human owners
 - [`../TEMPLATE_READINESS.md`](../TEMPLATE_READINESS.md) — Template readiness gates
 - [`../prompt-library/`](../prompt-library/) — Copy/paste worker prompts

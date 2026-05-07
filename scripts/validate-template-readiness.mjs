@@ -12,7 +12,8 @@ const CHECKS = {
   rootDocs: [
     'README.md', 'AGENTS.md', 'PROJECT_GOAL.md', 'TEMPLATE_USAGE.md',
     'HUMAN_OWNER_GUIDE.md', 'TEMPLATE_READINESS.md', 'CONTRIBUTING.md',
-    'SECURITY.md', 'CHANGELOG.md', 'RELEASE_CHECKLIST.md'
+    'SECURITY.md', 'CHANGELOG.md', 'RELEASE_CHECKLIST.md', 'CODE_OF_CONDUCT.md',
+    '.env.example', '.editorconfig', '.gitattributes'
   ],
   agentOsDirs: [
     'agent-os/workers', 'agent-os/roles', 'agent-os/tasks/backlog',
@@ -23,9 +24,10 @@ const CHECKS = {
   agentOsFiles: [
     'agent-os/README.md', 'agent-os/assignment-model.md', 'agent-os/execution-modes.md',
     'agent-os/worker-contract.md', 'agent-os/task-lifecycle.md', 'agent-os/definition-of-done.md',
-    'agent-os/verification-gates.md', 'agent-os/tasks/task-template.md',
-    'agent-os/handoffs/handoff-template.md'
+    'agent-os/verification-gates.md', 'agent-os/tasks/task-template.md', 'agent-os/handoffs/handoff-template.md',
+    'agent-os/mcp.md', 'agent-os/prompt-injection-policy.md'
   ],
+
   promptLibrary: [
     'prompt-library/README.md', 'prompt-library/goal-intake-to-tasks.md',
     'prompt-library/solo-worker-start.md', 'prompt-library/multi-worker-start.md',
@@ -38,6 +40,9 @@ const CHECKS = {
     'examples/README.md', 'examples/sample-project-goal.md', 'examples/sample-task.md',
     'examples/sample-handoff.md', 'examples/sample-verification-report.md',
     'examples/sample-reassignment-record.md', 'examples/sample-status-report.md'
+  ],
+  mcpFiles: [
+    '.mcp.example.json'
   ],
   adrFiles: [
     'docs/02-architecture/decisions/ADR-0001-repo-orchestrated-worker-system.md',
@@ -69,6 +74,7 @@ check('Agent OS Dirs', CHECKS.agentOsDirs);
 check('Agent OS Files', CHECKS.agentOsFiles);
 check('Prompt Library', CHECKS.promptLibrary);
 check('Examples', CHECKS.examples);
+check('MCP Config', CHECKS.mcpFiles);
 check('ADR Files', CHECKS.adrFiles);
 
 // Check no Copilot files
