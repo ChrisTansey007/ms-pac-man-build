@@ -40,18 +40,13 @@
 - [ ] Examples are clearly marked as examples
 
 ## Script Validation
-- [ ] `npm run validate:json` passes
-- [ ] `npm run validate:tasks` passes
-- [ ] `npm run validate:handoffs` passes
-- [ ] `npm run validate:assignments` passes
-- [ ] `npm run validate:decisions` passes
-- [ ] `npm run validate:links` passes
-- [ ] `npm run validate:placeholders` passes
-- [ ] `npm run validate:locks` passes
-- [ ] `npm run validate:mcp` passes
+
+See [`docs/03-development/commands.md`](./docs/03-development/commands.md) for the canonical command list.
+
+- [ ] `npm run audit` passes
+- [ ] `npm run validate:agent-os` passes
 - [ ] `npm run validate:template` passes
 - [ ] `npm run check:dod` passes
-- [ ] `npm run audit` passes
 
 ## GitHub Readiness
 - [ ] Workflows are syntactically valid

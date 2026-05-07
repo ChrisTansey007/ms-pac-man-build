@@ -146,28 +146,14 @@ See [`agent-os/execution-modes.md`](./agent-os/execution-modes.md) for full deta
 
 ## Validation
 
-Run these commands to validate the repo:
+See [`docs/03-development/commands.md`](./docs/03-development/commands.md) for the canonical command list.
+
+Run the highest-level checks first:
 
 ```bash
-npm run audit                  # Full audit of all checks
-npm run validate:agent-os      # Run all agent-os validations
-npm run validate:json          # Validate all JSON files
-npm run validate:tasks         # Validate task files
-npm run validate:handoffs      # Validate handoff files
-npm run validate:assignments   # Validate assignment consistency
-npm run validate:decisions     # Validate ADR/decision files
-npm run validate:links         # Check for broken links
-npm run validate:placeholders  # Audit placeholder usage
-npm run validate:locks         # Validate lock files
-npm run validate:mcp           # Validate optional MCP config
-npm run validate:template      # Check template readiness
-npm run status:generate        # Generate a status report
-npm run assignments:report     # Generate an assignment report
-npm run check:dod              # Check definition of done
-npm run list:tasks             # List tasks by state
-npm run list:workers           # List worker statuses
-npm run list:capabilities      # List all capabilities
-npm run list:modes             # Show current execution mode
+npm run audit
+npm run validate:agent-os
+npm run validate:template
 ```
 
 ---

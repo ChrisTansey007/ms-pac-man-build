@@ -1,5 +1,5 @@
 {
-  "description": "Machine-readable decision register. Mirrors docs/05-decisions/decision-register.md.",
+  "description": "Machine-readable decision register. Source of truth for docs/05-decisions/decision-register.md.",
   "decisions": [
     {
       "adr": "ADR-0001",

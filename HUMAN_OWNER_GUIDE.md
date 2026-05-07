@@ -46,25 +46,14 @@ Set mode in `agent-os/state/assignment-state.json`.
 
 ## Validation Commands
 
+See [`docs/03-development/commands.md`](./docs/03-development/commands.md) for the canonical command list.
+
+Typical owner checks:
+
 ```bash
-npm run audit                  # Full audit
-npm run validate:agent-os      # All agent-os validations
-npm run validate:json          # JSON validation
-npm run validate:tasks         # Task structure
-npm run validate:handoffs      # Handoff structure
-npm run validate:assignments   # Assignment consistency
-npm run validate:decisions     # ADR/decision files
-npm run validate:links         # Broken link check
-npm run validate:placeholders  # Placeholder audit
-npm run validate:locks         # Lock validation
-npm run validate:template      # Template readiness
-npm run status:generate        # Status report
-npm run assignments:report     # Assignment report
-npm run check:dod              # Definition of done
-npm run list:tasks             # List tasks
-npm run list:workers           # List workers
-npm run list:capabilities      # List capabilities
-npm run list:modes             # Show execution mode
+npm run audit
+npm run validate:agent-os
+npm run validate:template
 ```
 
 ## Common Mistakes
