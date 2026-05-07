@@ -26,7 +26,7 @@ const CHECKS = {
     'agent-os/worker-contract.md', 'agent-os/task-lifecycle.md', 'agent-os/definition-of-done.md',
     'agent-os/verification-gates.md', 'agent-os/tasks/task-template.md', 'agent-os/handoffs/handoff-template.md',
     'agent-os/mcp.md', 'agent-os/worktree-strategy.md', 'agent-os/provider-routing.md',
-    'agent-os/prompt-injection-policy.md'
+    'agent-os/prompt-injection-policy.md', 'agent-os/startup-sequence.md'
   ],
   agentOsStateFiles: [
     'agent-os/state/provider-tiers.json'

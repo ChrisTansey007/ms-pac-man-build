@@ -19,14 +19,11 @@
 
 ## Required Reading
 
-Read these files in order before taking any action:
+Read the canonical startup order first:
 
 1. [`AGENTS.md`](./AGENTS.md) — The constitution.
-2. [`PROJECT_GOAL.md`](./PROJECT_GOAL.md) — Project definition.
-3. [`agent-os/README.md`](./agent-os/README.md) — Agent OS overview.
-4. [`agent-os/worker-contract.md`](./agent-os/worker-contract.md) — Your obligations.
-5. [`agent-os/state/system-state.json`](./agent-os/state/system-state.json) — Current state.
-6. [`agent-os/workers/hermes-worker.md`](./agent-os/workers/hermes-worker.md) — Your role definition.
+2. [`agent-os/startup-sequence.md`](./agent-os/startup-sequence.md) — Canonical startup order and reading checklist.
+3. [`agent-os/workers/hermes-worker.md`](./agent-os/workers/hermes-worker.md) — Your role definition.
 
 ---
 

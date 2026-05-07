@@ -7,14 +7,11 @@
 
 ## Required Reading (Import Order)
 
-Gemini must read these files in order before taking any action:
+Gemini must read the canonical startup order first:
 
 1. **Import:** [`AGENTS.md`](./AGENTS.md) — The constitution. Primary source of truth.
-2. **Import:** [`PROJECT_GOAL.md`](./PROJECT_GOAL.md) — Project definition.
-3. **Import:** [`agent-os/README.md`](./agent-os/README.md) — Agent OS overview.
-4. **Import:** [`agent-os/worker-contract.md`](./agent-os/worker-contract.md) — Worker obligations.
-5. **Import:** [`agent-os/state/system-state.json`](./agent-os/state/system-state.json) — Current state.
-6. **Import:** [`agent-os/workers/gemini-worker.md`](./agent-os/workers/gemini-worker.md) — Your role definition.
+2. **Import:** [`agent-os/startup-sequence.md`](./agent-os/startup-sequence.md) — Canonical startup order and reading checklist.
+3. **Import:** [`agent-os/workers/gemini-worker.md`](./agent-os/workers/gemini-worker.md) — Your role definition.
 
 ---
 

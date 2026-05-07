@@ -9,6 +9,7 @@ Generated reports from the ROWS system.
 | [`status/`](./status/) | System status reports (daily, weekly, sprint) |
 | [`verification/`](./verification/) | Task verification reports and evidence |
 | [`audits/`](./audits/) | Audit findings and reports |
+| [`startup-consistency/`](./startup-consistency/) | Startup sequence validation reports |
 
 ## Related Files
 

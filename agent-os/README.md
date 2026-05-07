@@ -72,6 +72,7 @@ agent-os/
     ├── placeholders/             ← Placeholder audit reports
     ├── locks/                    ← Lock validation reports
     ├── provider-routing/         ← Provider routing validation reports
+    ├── startup-consistency/      ← Startup sequence validation reports
     └── security/                 ← Secret scan reports
 ```
 

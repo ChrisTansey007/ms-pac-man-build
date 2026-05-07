@@ -74,18 +74,7 @@ See [`agent-os/assignment-model.md`](./agent-os/assignment-model.md) for the ful
 
 ## 6. Worker Startup Sequence
 
-Every worker, on every session, MUST follow this sequence:
-
-1. **Read `AGENTS.md`** (this file) — understand the constitution.
-2. **Read `PROJECT_GOAL.md`** — understand the project.
-3. **Read `agent-os/README.md`** — understand the agent OS.
-4. **Read `agent-os/worker-contract.md`** — understand your obligations.
-5. **Read `agent-os/state/system-state.json`** — understand current state.
-6. **Read `agent-os/state/assignment-state.json`** — understand execution mode and assignments.
-7. **Read `agent-os/state/capability-registry.json`** — understand capability definitions.
-8. **Read your worker-specific file** in `agent-os/workers/` — understand your capabilities.
-9. **Read your tool adapter file** (e.g., `CLAUDE.md`, `.windsurf/README.md`) — understand tool-specific setup.
-10. **Identify or claim a task** following the claiming rules below.
+The canonical startup order lives in [`agent-os/startup-sequence.md`](./agent-os/startup-sequence.md). Every worker, on every session, must follow that document before taking any action. Do not duplicate the full startup list here.
 
 ---
 
