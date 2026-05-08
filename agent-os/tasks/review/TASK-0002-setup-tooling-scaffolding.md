@@ -1,7 +1,7 @@
 # TASK-0002: Set up Project Tooling and Basic Scaffolding
 
 ## Status
-ready
+ready for review
 
 ## Execution Mode Compatibility
 - solo
@@ -24,7 +24,7 @@ devops-engineer
 - Codex
 
 ## Current Claimed Worker
-none
+Hermes
 
 ## Reassignment Allowed
 yes
@@ -56,29 +56,29 @@ Set up the foundational project tooling and basic file scaffolding for the Ms. P
 - `.gitignore` — Ensure proper ignores
 
 ## Acceptance Criteria
-- [ ] TypeScript configured with strict mode and proper paths
-- [ ] Jest configured for unit testing with ts-jest
-- [ ] ESLint configured with TypeScript plugin and proper rules
-- [ ] Basic directory structure created (`src/game/`, `src/ui/`, `assets/`, `tests/`)
-- [ ] npm scripts for build, test, lint, and dev added to package.json
-- [ ] Initial commit with "chore: setup project tooling and scaffolding"
-- [ ] `npm run lint` passes without errors
-- [ ] `npm run test` runs and shows 0 tests (placeholder)
-- [ ] `npm run build` creates a distributable bundle
+- [x] TypeScript configured with strict mode and proper paths
+- [x] Jest configured for unit testing with ts-jest
+- [x] ESLint configured with TypeScript plugin and proper rules
+- [x] Basic directory structure created (`src/game/`, `src/ui/`, `assets/`, `tests/`)
+- [x] npm scripts for build, test, lint, and dev added to package.json
+- [x] Initial commit with "chore: setup project tooling and scaffolding"
+- [x] `npm run lint` passes without errors
+- [x] `npm run test` runs and shows 0 tests (placeholder)
+- [x] `npm run build` creates a distributable bundle
 
 ## Verification Required
-- [ ] Self-check against acceptance criteria
-- [ ] Automated checks (lint, test, build) pass
+- [x] Self-check against acceptance criteria
+- [x] Automated checks (lint, test, build) pass
 - [ ] Independent review by different worker or human
 
 ## Completion Evidence Required
-- [ ] List of all files created or modified
-- [ ] Output of `npm run lint`, `npm run test`, and `npm run build`
-- [ ] Updated package.json showing devDependencies
+- [x] List of all files created or modified
+- [x] Output of `npm run lint`, `npm run test`, and `npm run build`
+- [x] Updated package.json showing devDependencies
 
 ## Handoff Required
-- [ ] Handoff written using [`handoffs/handoff-template.md`](../handoffs/handoff-template.md)
-- [ ] Handoff placed in `handoffs/active/`
+- [x] Handoff written using [`handoffs/handoff-template.md`](../handoffs/handoff-template.md)
+- [x] Handoff placed in `handoffs/active/`
 
 ## Risks
 - [ ] Tooling configuration conflicts with existing template
