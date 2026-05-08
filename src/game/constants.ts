@@ -14,3 +14,10 @@ export const DIRECTION = {
 } as const;
 
 export type Direction = typeof DIRECTION[keyof typeof DIRECTION];
+
+// Scoring constants
+export const POINT_DOT = 10;
+export const POINT_POWER_PELLET = 50;
+export const POINT_GHOST_BASE = 200; // Base points for eating a ghost, doubles each consecutive ghost
+export const POINT_FRUIT_BASE = 100; // Base points for fruit, increases per level
+export const EXTRA_LIFE_THRESHOLD = 10000; // Points needed for an extra life
